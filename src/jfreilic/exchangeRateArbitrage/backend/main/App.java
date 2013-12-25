@@ -2,12 +2,10 @@ package jfreilic.exchangeRateArbitrage.backend.main;
 
 public class App {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		ExchangeRateCache cache = new ExchangeRateCache();
+		while(true){
+			System.out.println(cache.getArbitrage() + "\n");
+		}
 	}
-
 }
